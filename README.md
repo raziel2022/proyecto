@@ -1,4 +1,5 @@
 # proyecto
+Alan y Teresita
 
 Rubricas
 
