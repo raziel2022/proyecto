@@ -6,10 +6,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Cursos Gp</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta property="og:image" content=" https://cefne.com/wp-content/uploads/2021/06/foto-cefne2.jpg" />
+  <meta name="description" content="Cursos en Linea GP"/>
+  <meta content="cursos, online" name="keywords">
 
-
+  <!-- Icono de la pagina -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -24,7 +25,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <!-- Css propios -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -32,13 +33,15 @@
 <body>
 
   <!-- ======= Header ======= -->
+  <!-- https://getbootstrap.com/docs/4.0/utilities/flex/ explicacion de los flex-->
   <header id="header" class="fixed-top ">
+    <!-- d-flex aplica un display para crear un contenedor de caja flex  y transformar elementos secundarios directos en elementos flexi-->
     <div class="container d-flex align-items-center justify-content-lg-between">
-
+  <!--lg-0 es los largo de  sm es small -->
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
-      
+      <!-- orden-last es una clase responsiva-->
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
+        <ul> <!--list group para menu  li list group de los items  dropdown complemento desplegable Bootstrap-->
           <li class="dropdown"><a href="#universidad"><span>Para Universidades</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Análisis de Datos con Power BI </a></li>
@@ -60,10 +63,10 @@
               <li><a href="#">Python</a></li>
             </ul>
           </li>
+          <!-- se agrego la clase scrollto para desplazar la pagina a un lugar indicado y se identifica por el id de la seccion a donde se va a dirigir-->
           <li><a class="nav-link scrollto" href="#contacto">Contacto</a></li>
           <li><a class="nav-link scrollto" href="#Cursos">Cursos</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
       <a href="#login" class="get-started-btn scrollto">Login</a>
@@ -81,9 +84,11 @@
           <h2>Certificados Profesionales de las principales empresas de México.</h2>
         </div>
       </div>
-
+<!-- se agrega instrucciones de grid-->
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
+       
+       <!-- documentacion de grid https://getbootstrap.com/docs/5.0/layout/grid/--> 
+       <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="bi bi-book"></i>
             <h3><a href="">Temario a la Vanguardia</a></h3>
@@ -119,41 +124,14 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Actualizate con los curso que tenemos a la vanguardia </h3>
-            <p class="fst-italic">
-              En GP podras tener acceso a las ultimas tecnologias emergentes para el analisis de informacion.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i>Computer Aided Designing</li>
-              <li><i class="ri-check-double-line"></i> Software Engineering & Cloud Computing</li>
-              <li><i class="ri-check-double-line"></i> Finance & Accounting</li>
-            </ul>
-            <p>
-              Se cuenta con el respaldo de mas 13,500 egresados de GP, a los cuales se les ha dado un seguimiento profesional una vez que concluyen sus cursos con nosotros.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-   
-    <!-- ======= Features Section ======= -->
+     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
           <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
+          <!--  fade-left efecto de entrada de los objetos https://michalsnik.github.io/aos/
+          col-lg-6 rejillas  https://uniwebsidad.com/libros/bootstrap-3/capitulo-2/tipos-de-rejillas-->
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-receipt"></i>
@@ -307,7 +285,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -373,7 +351,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
