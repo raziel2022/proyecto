@@ -45,7 +45,7 @@ if(!$mail->send()) {
   echo 'Email error: ' . $mail->ErrorInfo;
 } else {
   echo 'Email enviado. '. $asunto;
-  header("Location: ../index.html?signup=success"); 
+  header("Location: ../index.html?email=success"); 
   
 }
 ?>
